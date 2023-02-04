@@ -1,21 +1,22 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="Registration_Form.css">
     </head>
-<body class="pgbackground" >
+    <body >
     <form action="www.google.com" target="_blank" method="post" autocomplete="off">
     <div id="heading_bg" align="center"> <b>Registration Form</b></div><br>
     <fieldset>
         <legend >Required Fields</legend>
-    <table border="2px" align="center">
+        <b>
+    <table  border="2px" align="center" class="tablebg" id="table">
         <tr>
             <td><label for="fname">First Name:</label></td>
-            <td><input type="text" id="fname" name="fname" placeholder="Enter your answer..." required></td>
+            <td><input type="text" id="fname" name="fname" placeholder="Enter your first name..." required></td>
         </tr>
         <tr>
             <td><label for="sname">Surname:</label></td>
-            <td><input type="text" id="sname" name="sname" placeholder="Enter your answer..." required></td>
+            <td><input type="text" id="sname" name="sname" placeholder="Enter your surname  ..." required></td>
         </tr>
         <tr>
             <td><label for="stream">Stream:</label></td>
@@ -28,8 +29,8 @@
         </tr>
         <tr>
             <td>Gender:</td>
-            <td><label for="male"  required><input type="radio" id="male" name="gender">Male</label></td>
-            <td><label for="female"  required><input type="radio" id="female" name="gender">Female</label></td>
+            <td colspan="2"><label for="male"  required><input type="radio" id="male" name="gender">Male</label>
+                <label for="female"  required><input type="radio" id="female" name="gender">Female</label></td>
         </tr>
         <tr>
             <td><label for="DOB">DOB:</label></td>
@@ -40,20 +41,21 @@
             <td><input type="file" name="uploadphoto" multiple></td>
         </tr> 
         <tr>
-            <td rowspan="3">Known Computer Languages:</td>
-            <td><label for="html"><input type="checkbox" id="html" name="computerlang" >HTML</label></td>
-            <td><label for="css"><input type="checkbox" id="css" name="computerlang">CSS</label></td></tr>
-        <tr><td><label for="javascript"><input type="checkbox" id="javascript" name="computerlang">JAVASCRIPT</label></td>
-        <td><label for="php"><input type="checkbox" id="php" name="computerlang">PHP</label></td></tr>
-        <tr><td><label for="java"><input type="checkbox" id="java" name="computerlang">JAVA</label></td>
-            <td><label for="c#"><input type="checkbox" id="c#" name="computerlang">C#</label></td>
+            <td rowspan="2">Known Computer Languages:</td>
+            <td colspan="2"><label for="html"><input type="checkbox" id="html" name="computerlang" >HTML</label>
+            <label for="css"><input type="checkbox" id="css" name="computerlang">CSS</label>
+            <label for="javascript"><input type="checkbox" id="javascript" name="computerlang">JAVASCRIPT</label></td></tr>
+            <tr><td colspan="2"><label for="php"><input type="checkbox" id="php" name="computerlang">PHP</label>
+            <label for="java"><input type="checkbox" id="java" name="computerlang">JAVA</label>
+            <label for="c#"><input type="checkbox" id="c#" name="computerlang">C#</label></td>
         </tr>
-        <tr>
+        <tr >
            <!-- <td><button type="button" onclick="alert('Hello World!')"></button></td>-->
-            <td><input type="submit" name="submit" value="SUBMIT"></td>
-            <td><input type="reset" name="reset" value="RESET"></td>
+            <td><button id="submit" type="submit">SUBMIT</button>
+                <button id="reset" type="reset">RESET</button></td>
         </tr>
     </table>
+</b>
     </fieldset>
     </form>
 </body>
